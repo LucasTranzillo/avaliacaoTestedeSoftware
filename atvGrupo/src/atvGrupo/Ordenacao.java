@@ -36,19 +36,16 @@ public class Ordenacao {
 	public static void main(String args[]) {
 
 	    Scanner in = new Scanner (System.in);
-	    System.out.println("Digite os 5 valores do vetor sequencialmente e sem espaços");
+	    System.out.println("Digite os 5 valores do vetor sequencialmente e sem espaÃ§os");
 	    int[] numeros = new int[5];
 	    for(int i = 0; i < 5; i++){
-	         System.out.print("Digite um número: ");
+	         System.out.print("Digite um nÃºmero: ");
 	         numeros[i] = in.nextInt();
 	    }
 	 
-		for (int a = 0; a < numeros.length; a++) {
-			System.out.println(" " + numeros[a]);
-		}
 		quickSort(numeros, 0, numeros.length - 1);
 System.out.println("--------------Ordenado---------------");
-		for (int a = 0; a < numeros.length; a++) {
+		for (int a = 0; a <= numeros.length; a++) {
 			System.out.println(" " + numeros[a]);
 		}
 
